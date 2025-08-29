@@ -38,12 +38,24 @@ The system uses a **Bag of Words model with cosine similarity** to measure close
    - For a given movie, the system finds **5 most similar movies** based on vector similarity (angular distance).
    - Recommendations are displayed instantly via the **Streamlit web app**.
 
+6. 🎬 Frontend (Streamlit App)
+
+   The frontend of this project is built using **Streamlit**, providing an interactive and user-friendly web interface.
+
+   - Users can search for any movie by typing its name into the input box.  
+   - Once a movie is selected, the system fetches **top 5 similar recommendations** using the pre-computed similarity matrix.  
+   - For each recommended movie, the **poster is retrieved dynamically** from [TMDb API](https://www.themoviedb.org/documentation/api), using the corresponding movie ID from the dataset.  
+   - Results are displayed in a clean layout with movie titles and posters side by side for a smooth user experience.  
+
+   This ensures the model’s results are not just textual but also visually engaging.
+
+
 ---
 
 ## 🖥️ Tech Stack
 - **Python** 🐍  
 - **Libraries**: Pandas, NumPy, Scikit-learn, NLTK, Ast, Regular Expressions  
-- **Frontend**: Streamlit  
+- **Web App**: Streamlit,HTML,CSS,JS  
 - **Deployment**: Render  
 
 ---
