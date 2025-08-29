@@ -69,3 +69,15 @@ The system uses a **Bag of Words model with cosine similarity** to measure close
 
 ---
 
+Here’s a breakdown of the important files in this repository:
+
+- **app.py** → The main frontend built using **Streamlit**. It takes user input, fetches posters from the TMDB API, and displays recommended movies interactively.  
+- **movie recommender system.ipynb** → Jupyter Notebook containing the **data preprocessing, feature engineering, and model building** steps.  
+- **movie_dict.pkl** → Serialized dictionary of movie metadata (used for quick access in the app).  
+- **similarity.pkl** → Precomputed similarity matrix (using Bag of Words + Cosine Similarity) that powers the recommendation engine.  (built model)
+- **requirements.txt** → Contains the list of required Python libraries for running the project.  
+- **Procfile & setup.sh** → Deployment configuration files for **Heroku**.  
+- **README.md** → Documentation of the project (you’re reading it!).  
+- **mypic.jpg / mypic.png** → Images used for showcasing in the README or app interface.  
+
+> Note: Other files/folders like `.idea`, `.ipynb_checkpoints`, `.gitattributes`, and `.gitignore` are automatically generated and mainly used for environment/configuration.
